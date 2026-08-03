@@ -1,0 +1,5 @@
+# üretilen site (CI tarafından her push'ta yeniden üretilir)
+site/
+__pycache__/
+*.pyc
+.DS_Store

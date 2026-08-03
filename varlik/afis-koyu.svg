@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 340" width="1280" height="340" role="img" aria-label="Yapay Zeka Güvenliği Kaynakları — Türkçe, küratörlü, CI ile doğrulanan liste">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b0f19"/>
+      <stop offset="55%" stop-color="#111827"/>
+      <stop offset="100%" stop-color="#0e1626"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#8b5cf6"/>
+      <stop offset="50%" stop-color="#6366f1"/>
+      <stop offset="100%" stop-color="#22d3ee"/>
+    </linearGradient>
+    <linearGradient id="markFill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#a78bfa"/>
+      <stop offset="100%" stop-color="#22d3ee"/>
+    </linearGradient>
+    <pattern id="grid" width="34" height="34" patternUnits="userSpaceOnUse">
+      <path d="M34 0H0V34" fill="none" stroke="#ffffff" stroke-opacity="0.045" stroke-width="1"/>
+    </pattern>
+    <radialGradient id="glow" cx="0.18" cy="0.5" r="0.6">
+      <stop offset="0%" stop-color="#8b5cf6" stop-opacity="0.30"/>
+      <stop offset="100%" stop-color="#8b5cf6" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1280" height="340" fill="url(#bg)"/>
+  <rect width="1280" height="340" fill="url(#grid)"/>
+  <rect width="1280" height="340" fill="url(#glow)"/>
+
+  <!-- kalkan işareti -->
+  <g transform="translate(84 96)">
+    <path d="M56 0 L112 22 V70 C112 106 88 134 56 148 C24 134 0 106 0 70 V22 Z"
+          fill="none" stroke="url(#markFill)" stroke-width="3.5" stroke-linejoin="round"/>
+    <path d="M56 26 L86 38 V72 C86 92 73 109 56 117 C39 109 26 92 26 72 V38 Z"
+          fill="#a78bfa" fill-opacity="0.10"/>
+    <path d="M33 70 L48 86 L80 50" fill="none" stroke="#22d3ee" stroke-width="6"
+          stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- başlık -->
+  <text x="252" y="132" fill="#f8fafc"
+        font-family="ui-sans-serif,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif"
+        font-size="54" font-weight="700" letter-spacing="-1.2">Yapay Zeka Güvenliği</text>
+  <text x="252" y="196" fill="#c4b5fd"
+        font-family="ui-sans-serif,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif"
+        font-size="54" font-weight="700" letter-spacing="-1.2">Kaynakları</text>
+
+  <rect x="252" y="222" width="88" height="4" rx="2" fill="url(#accent)"/>
+
+  <text x="252" y="264" fill="#94a3b8"
+        font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace"
+        font-size="19" letter-spacing="0.2">Türkçe açıklamalı · küratörlü · CI ile doğrulanan</text>
+
+  <!-- sağ taraf: konu etiketleri -->
+  <g font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="14">
+    <g transform="translate(876 96)">
+      <rect width="160" height="34" rx="17" fill="#ffffff" fill-opacity="0.05" stroke="#8b5cf6" stroke-opacity="0.45"/>
+      <text x="80" y="22" fill="#ddd6fe" text-anchor="middle">prompt injection</text>
+    </g>
+    <g transform="translate(1050 96)">
+      <rect width="160" height="34" rx="17" fill="#ffffff" fill-opacity="0.05" stroke="#6366f1" stroke-opacity="0.45"/>
+      <text x="80" y="22" fill="#c7d2fe" text-anchor="middle">jailbreak</text>
+    </g>
+    <g transform="translate(876 142)">
+      <rect width="160" height="34" rx="17" fill="#ffffff" fill-opacity="0.05" stroke="#22d3ee" stroke-opacity="0.45"/>
+      <text x="80" y="22" fill="#a5f3fc" text-anchor="middle">guardrail</text>
+    </g>
+    <g transform="translate(1050 142)">
+      <rect width="160" height="34" rx="17" fill="#ffffff" fill-opacity="0.05" stroke="#8b5cf6" stroke-opacity="0.45"/>
+      <text x="80" y="22" fill="#ddd6fe" text-anchor="middle">MCP güvenliği</text>
+    </g>
+    <g transform="translate(876 188)">
+      <rect width="160" height="34" rx="17" fill="#ffffff" fill-opacity="0.05" stroke="#6366f1" stroke-opacity="0.45"/>
+      <text x="80" y="22" fill="#c7d2fe" text-anchor="middle">tedarik zinciri</text>
+    </g>
+    <g transform="translate(1050 188)">
+      <rect width="160" height="34" rx="17" fill="#ffffff" fill-opacity="0.05" stroke="#22d3ee" stroke-opacity="0.45"/>
+      <text x="80" y="22" fill="#a5f3fc" text-anchor="middle">RAG güvenliği</text>
+    </g>
+  </g>
+
+  <rect x="0" y="336" width="1280" height="4" fill="url(#accent)"/>
+</svg>

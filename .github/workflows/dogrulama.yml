@@ -1,0 +1,83 @@
+name: dogrulama
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  schedule:
+    # Haftalık tam tarama — ölü linkler sessizce birikmesin
+    - cron: '0 6 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  bicim:
+    name: Biçim kontrolü
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Açıklamasız link var mı?
+        run: |
+          # CONTRIBUTING.md kural 1: her linkin yanında Türkçe açıklama olmalı.
+          ihlal=$(grep -rnE '^\s*[-*] \[[^]]+\]\([^)]+\)\s*$' kaynaklar/ || true)
+          if [ -n "$ihlal" ]; then
+            echo "::error::Açıklamasız link bulundu. Her girdi ' — ' ile açıklama içermeli."
+            echo "$ihlal"
+            exit 1
+          fi
+          echo "Tüm girdilerde açıklama var."
+
+      - name: Bölüm kaynak sayısı sınırlar içinde mi?
+        run: |
+          hata=0
+          for f in kaynaklar/*.md; do
+            n=$(grep -cE '^- \[' "$f" || true)
+            if [ "$n" -lt 10 ]; then
+              echo "::warning file=$f::$f sadece $n kaynak içeriyor (hedef: en az 15)"
+            fi
+            if [ "$n" -gt 40 ]; then
+              echo "::error file=$f::$f $n kaynak içeriyor — üst sınır 40, bölünmeli veya elenmeli"
+              hata=1
+            fi
+          done
+          exit $hata
+
+  linkler:
+    name: Ölü link taraması
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: lychee
+        id: lychee
+        uses: lycheeverse/lychee-action@v2
+        with:
+          args: >-
+            --no-progress
+            --max-retries 3
+            --retry-wait-time 4
+            --timeout 30
+            --accept 200,206,403,429
+            --exclude-mail
+            --exclude-path ./site
+            './**/*.md'
+          fail: true
+          output: lychee.md
+
+      - name: Rapor özeti
+        if: always()
+        run: cat lychee.md >> "$GITHUB_STEP_SUMMARY" || true
+
+      # Zamanlanmış taramada kırık link bulunursa issue aç.
+      # PR'da issue açma — orada fail yeterli sinyal.
+      - name: Kırık link issue'su
+        if: failure() && github.event_name == 'schedule'
+        uses: peter-evans/create-issue-from-file@v5
+        with:
+          title: 'Ölü link taraması başarısız'
+          content-filepath: lychee.md
+          labels: bakim, olu-link

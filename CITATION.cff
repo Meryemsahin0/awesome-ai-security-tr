@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+title: "Yapay Zeka Güvenliği Kaynakları (awesome-ai-security-tr)"
+message: "Bu listeyi kullanırsanız lütfen aşağıdaki gibi atıf verin."
+type: dataset
+abstract: >-
+  Türkçe açıklamalı, küratörlü ve sürekli entegrasyonla doğrulanan bir yapay
+  zeka güvenliği kaynak dizini. Prompt injection, jailbreak, red teaming,
+  guardrail, ajan/MCP güvenliği, RAG güvenliği ve model tedarik zinciri
+  başlıklarında her kaynağın neden listelendiğini Türkçe açıklar.
+authors:
+  - given-names: "Fevzi Ege"
+    family-names: "Yurtsevenler"
+    orcid: "https://orcid.org/0009-0008-6518-8944"
+repository-code: "https://github.com/fevziegeyurtsevenler/awesome-ai-security-tr"
+url: "https://fevziegeyurtsevenler.github.io/awesome-ai-security-tr/"
+license: CC-BY-4.0
+keywords:
+  - yapay zeka güvenliği
+  - LLM güvenliği
+  - prompt injection
+  - jailbreak
+  - red teaming
+  - guardrail
+  - MCP güvenliği
+  - RAG güvenliği
+  - Türkçe
