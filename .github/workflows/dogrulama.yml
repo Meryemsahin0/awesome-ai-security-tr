@@ -62,7 +62,6 @@ jobs:
             --retry-wait-time 4
             --timeout 30
             --accept 200,206,403,429
-            --exclude-mail
             --exclude-path ./site
             './**/*.md'
           fail: true
