@@ -111,3 +111,21 @@ Bu liste bir dizin. Konuları sırayla ve derinlemesine anlatan Türkçe rehberl
     Katkıya açık
   </sub>
 </p>
+
+---
+
+## İlgili AltaySec Kaynakları
+
+- 📖 [AI Security Öğrenme Rehberi — Sıfırdan Uzmanlığa](https://altaysec.com.tr/arastirmalar/ai-security-ogrenme-rehberi) — konunun derinlemesine Türkçe analizi
+- 🌐 [AltaySec Araştırmalar](https://altaysec.com.tr/arastirmalar/) — Türkçe yapay zekâ güvenliği yazıları
+
+## Atıf
+
+```bibtex
+@software{altaysec_awesome_ai_security_tr_2026,
+  author = {{AltaySec}},
+  title  = {awesome-ai-security-tr},
+  year   = {2026},
+  url    = {https://github.com/fevziegeyurtsevenler/awesome-ai-security-tr}
+}
+```
