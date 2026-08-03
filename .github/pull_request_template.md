@@ -7,8 +7,7 @@
 - [ ] Her linkin yanında **1-2 cümlelik Türkçe açıklama** var (çıplak link yok)
 - [ ] Biçim doğru: `- [Ad](url) — açıklama. *(tür: …, dil: …)*`
 - [ ] Eklediğim her kaynağı **açtım ve okudum**
-- [ ] Sadece tek bir bölüm dosyasına dokundum
-- [ ] Bölüm 40 kaynak sınırını aşmıyor
+- [ ] Dokunduğum bölümler 40 kaynak sınırını aşmıyor
 - [ ] AltaySec kaynaklarını `🔧 AltaySec` rozetiyle işaretledim
 - [ ] CI yeşil
 

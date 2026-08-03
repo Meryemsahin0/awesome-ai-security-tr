@@ -82,7 +82,7 @@ Bu liste tek kişilik değil. Her bölümün ayrı bir sahibi var ve katkı PR i
 
 - Her linkin yanında **1-2 cümle Türkçe açıklama** olacak — çıplak link CI'da reddedilir
 - Eklediğin kaynağı **açıp okumuş olacaksın** (listeyi bir dil modeline doldurtmak yasak)
-- Sadece kendi bölümünde çalış — böylece PR'lar çakışmaz
+- Hangi bölüme istersen katkı ver; küçük ve odaklı PR'lar daha hızlı incelenir
 - Bölüm başına 15-40 kaynak; şişme awesome-list'leri öldürür
 
 ### Bölüm sahipleri
