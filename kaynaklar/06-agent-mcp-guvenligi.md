@@ -2,7 +2,7 @@
 
 > Model artık sadece cevap üretmiyor; araç çağırıyor, dosya okuyor, istek atıyor. Zafiyetin sonucu "kötü cevap" olmaktan çıkıp "yetkisiz eylem"e dönüşüyor.
 
-**Bölüm sahibi:** _(atanacak)_ · [Katkı kuralları](../CONTRIBUTING.md)
+Katkıya açık — eksik gördüğün kaynağı [PR ile ekle](../CONTRIBUTING.md).
 
 ---
 

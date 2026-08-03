@@ -2,7 +2,7 @@
 
 > "Bu sistem güvenli mi?" sorusunu ölçülebilir hâle getiren çerçeveler, ölçütler ve resmî standartlar.
 
-**Bölüm sahibi:** _(atanacak)_ · [Katkı kuralları](../CONTRIBUTING.md)
+Katkıya açık — eksik gördüğün kaynağı [PR ile ekle](../CONTRIBUTING.md).
 
 ---
 

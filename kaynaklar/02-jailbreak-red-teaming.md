@@ -2,7 +2,7 @@
 
 > Modelin hizalama (alignment) sınırlarını aşmaya yönelik saldırılar ve bunları sistematik olarak arayan saldırgan-taraf metodolojisi.
 
-**Bölüm sahibi:** _(atanacak)_ · [Katkı kuralları](../CONTRIBUTING.md)
+Katkıya açık — eksik gördüğün kaynağı [PR ile ekle](../CONTRIBUTING.md).
 
 ---
 

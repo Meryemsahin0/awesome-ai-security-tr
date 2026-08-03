@@ -23,7 +23,7 @@
 
 ---
 
-Türkçe yapay zeka güvenliği için **kaynak dizini**. İngilizce awesome-list'ler var; her kaynağın yanında **neden orada olduğunu Türkçe anlatan**, ölü linkleri otomatik tarayan ve birden çok küratörün sahiplendiği bir liste yoktu.
+Türkçe yapay zeka güvenliği için **kaynak dizini**. İngilizce awesome-list'ler var; her kaynağın yanında **neden orada olduğunu Türkçe anlatan** ve ölü linkleri otomatik tarayan bir liste yoktu.
 
 **Buradaki her girdi bir insan tarafından açılıp okundu.** Çıplak link kabul edilmiyor, CI bunu zorunlu kılıyor.
 
@@ -76,31 +76,18 @@ Bu yüzden 08. bölüm ayrı duruyor: İngilizce için ölçülmüş hiçbir son
 
 ## Katkı
 
-Bu liste tek kişilik değil. Her bölümün ayrı bir sahibi var ve katkı PR ile geliyor.
+Bölüm sahibi, atama, sıra yok. **İstediğin bölüme, istediğin zaman PR at** — geldikçe inceleniyor.
 
 **[CONTRIBUTING.md](CONTRIBUTING.md)'yi oku.** Özet:
 
 - Her linkin yanında **1-2 cümle Türkçe açıklama** olacak — çıplak link CI'da reddedilir
 - Eklediğin kaynağı **açıp okumuş olacaksın** (listeyi bir dil modeline doldurtmak yasak)
-- Hangi bölüme istersen katkı ver; küçük ve odaklı PR'lar daha hızlı incelenir
+- Küçük ve odaklı PR'lar daha hızlı incelenir
 - Bölüm başına 15-40 kaynak; şişme awesome-list'leri öldürür
 
-### Bölüm sahipleri
+Eksik gördüğün bir kaynak mı var? En hızlı katkı yolu bu. Bir bölümün 15'in altında olması onu doldurman için açık bir davet.
 
-| Bölüm | Sahibi |
-|---|---|
-| 01 · Prompt Injection | _boşta_ |
-| 02 · Jailbreak ve Red Teaming | _boşta_ |
-| 03 · Guardrail ve Savunma | _boşta_ |
-| 04 · Değerlendirme ve Standartlar | _boşta_ |
-| 05 · Model ve Tedarik Zinciri | _boşta_ |
-| 06 · Ajan, Araç ve MCP Güvenliği | _boşta_ |
-| 07 · RAG ve Uygulama Güvenliği | _boşta_ |
-| 08 · Türkçe Kaynaklar ve Veri Setleri | _boşta_ |
-| 09 · Eğitim, Lab ve CTF | _boşta_ |
-| Editörlük ve CI | [@fevziegeyurtsevenler](https://github.com/fevziegeyurtsevenler) |
-
-Bir bölümü sahiplenmek istiyorsan [issue aç](https://github.com/fevziegeyurtsevenler/awesome-ai-security-tr/issues/new) — sahiplik adınla birlikte burada kalıcı olarak durur.
+Katkıda bulunan herkes [katkıcılar listesinde](https://github.com/fevziegeyurtsevenler/awesome-ai-security-tr/graphs/contributors) kalıcı olarak görünür.
 
 ## İlgili Türkçe kaynaklar
 

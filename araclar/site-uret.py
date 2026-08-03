@@ -280,9 +280,8 @@ def uret():
   <li class="rozet">CC BY 4.0</li>
   <li class="rozet">ölü link taraması: haftalık</li>
 </ul>
-<p>İngilizce awesome-list'ler var; her kaynağın yanında <strong>neden orada olduğunu Türkçe anlatan</strong>,
-ölü linkleri otomatik tarayan ve birden çok küratörün sahiplendiği bir liste yoktu. Buradaki her girdi bir
-insan tarafından açılıp okundu.</p>
+<p>İngilizce awesome-list'ler var; her kaynağın yanında <strong>neden orada olduğunu Türkçe anlatan</strong>
+ve ölü linkleri otomatik tarayan bir liste yoktu. Buradaki her girdi bir insan tarafından açılıp okundu.</p>
 <h2>Bölümler</h2>
 <ul class="kartlar">
 {kartlar}
@@ -297,7 +296,7 @@ açık veri setleriyle birlikte yayımlanmış ölçümler:</p>
 <tr><td>Popüler bir jailbreak sınıflandırıcısı Türkçe saldırıları kaçırıyor</td><td>%83 kaçırma</td></tr>
 </table></div>
 <h2>Katkı</h2>
-<p>Her bölümün ayrı bir sahibi var ve katkı PR ile geliyor. Tek kural: çıplak link kabul edilmiyor —
+<p>Bölüm sahibi veya atama yok; istediğin bölüme PR atabilirsin. Tek kural: çıplak link kabul edilmiyor —
 her girdinin yanında 1-2 cümle Türkçe açıklama olmalı, ve eklediğin kaynağı okumuş olmalısın.
 Ayrıntı için <a href="{REPO_URL}/blob/main/CONTRIBUTING.md">katkı rehberi</a>.</p>
 """

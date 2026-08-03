@@ -2,7 +2,7 @@
 
 > Türkçe konuşan bir saldırı yüzeyi var ve İngilizce için ölçülmüş hiçbir sonuç buraya doğrudan taşınmıyor. Bu bölüm o boşluğu belgeliyor.
 
-**Bölüm sahibi:** _(atanacak)_ · [Katkı kuralları](../CONTRIBUTING.md)
+Katkıya açık — eksik gördüğün kaynağı [PR ile ekle](../CONTRIBUTING.md).
 
 ---
 

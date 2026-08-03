@@ -2,7 +2,7 @@
 
 > Bir dil modeline verilen talimatla, ona ulaşan veriyi ayırt edememesinden doğan zafiyet sınıfı. LLM güvenliğinin en temel ve en çözümsüz problemi.
 
-**Bölüm sahibi:** _(atanacak)_ · [Katkı kuralları](../CONTRIBUTING.md)
+Katkıya açık — eksik gördüğün kaynağı [PR ile ekle](../CONTRIBUTING.md).
 
 ---
 

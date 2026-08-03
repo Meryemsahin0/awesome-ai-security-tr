@@ -54,9 +54,9 @@ Bu listeyi yürüten ekibin ürettiği kaynaklar `🔧 AltaySec` rozetiyle göst
 - Kendi iddiasını doğrulamayan tanıtım yazıları
 - Bir insanın okumadığı, toplu üretilmiş girdiler
 
-## 3. Bölümler ve sahiplik
+## 3. Bölümler
 
-Her bölümün bir sahibi vardır; sahibi o bölüme gelen PR'ları inceler ve bakımından sorumludur. **Sahiplik katkıyı kısıtlamaz** — herkes her bölüme PR atabilir.
+Bölüm sahibi veya atama yok. İstediğin bölüme katkı verebilirsin.
 
 | Dosya | Bölüm |
 |---|---|
@@ -70,14 +70,14 @@ Her bölümün bir sahibi vardır; sahibi o bölüme gelen PR'ları inceler ve b
 | `kaynaklar/08-turkce-kaynaklar-veri-setleri.md` | Türkçe Kaynaklar ve Veri Setleri |
 | `kaynaklar/09-egitim-lab-ctf.md` | Eğitim, Lab ve CTF |
 
-Bir bölümü sahiplenmek istiyorsan issue aç. Sahiplik adınla birlikte README'de kalıcı olarak durur.
+Bir bölüm 15 kaynağın altındaysa orası doldurulmayı bekliyor demektir — en kolay başlangıç noktası.
 
 ## 4. PR süreci
 
-1. **Hangi bölüme istersen katkı ver.** Bölüm sahipliği inceleme içindir, kapı değil.
+1. **Fork'la, ekle, PR aç.** Ön izin, issue veya atama gerekmiyor.
 2. Küçük ve sık PR at. 40 linklik tek dev PR yerine 8'erli parçalar hem daha hızlı incelenir hem daha iyi incelenir.
 3. **CI yeşil olmalı.** İki kontrol çalışır: ölü link taraması ve açıklamasız link kontrolü.
-4. Bir gözden geçiren onayı gerekir.
+4. PR'lar geldikçe küratör tarafından incelenir; uygun olanlar merge edilir.
 
 ## 5. Yerelde kontrol
 

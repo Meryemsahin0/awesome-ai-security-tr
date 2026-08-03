@@ -2,7 +2,7 @@
 
 > Okuyarak değil, kırarak öğrenilen bölüm. Hepsi ücretsiz veya ücretsiz katmanı olan, elle denenebilir kaynaklar.
 
-**Bölüm sahibi:** _(atanacak)_ · [Katkı kuralları](../CONTRIBUTING.md)
+Katkıya açık — eksik gördüğün kaynağı [PR ile ekle](../CONTRIBUTING.md).
 
 ---
 

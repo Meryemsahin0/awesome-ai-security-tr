@@ -2,7 +2,7 @@
 
 > Modelin girdisini ve çıktısını denetleyen koruma katmanları — ve bu katmanların gerçekte ne kadar işe yaradığı.
 
-**Bölüm sahibi:** _(atanacak)_ · [Katkı kuralları](../CONTRIBUTING.md)
+Katkıya açık — eksik gördüğün kaynağı [PR ile ekle](../CONTRIBUTING.md).
 
 ---
 

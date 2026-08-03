@@ -2,7 +2,7 @@
 
 > Modeli bir uygulamaya bağladığınız anda klasik uygulama güvenliği geri geliyor — üstüne vektör veritabanı, belge alma ve aşırı yetki katmanlarıyla.
 
-**Bölüm sahibi:** _(atanacak)_ · [Katkı kuralları](../CONTRIBUTING.md)
+Katkıya açık — eksik gördüğün kaynağı [PR ile ekle](../CONTRIBUTING.md).
 
 ---
 
