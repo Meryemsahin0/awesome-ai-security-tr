@@ -83,6 +83,14 @@ jobs:
           done
           exit $hata
 
+  # Ölü link taraması, üçüncü parti sitelerin bot koruması ve coğrafi
+  # kısıtları yüzünden doğası gereği kırılgan: canlı bir adres runner'ın
+  # ağından "connection failed" dönebiliyor. Bu yüzden tarama iki kipte
+  # çalışır:
+  #   - push / PR   → bilgi amaçlı, katkıcıyı BLOKLAMAZ (fail: false)
+  #   - zamanlanmış → yetkili koşu, kırılırsa issue açar
+  # Katkıcının kendi işine dair deterministik kontroller (biçim, etiket,
+  # META kaydı) yukarıdaki "bicim" job'unda ve orası bloklayıcıdır.
   linkler:
     name: Ölü link taraması
     runs-on: ubuntu-latest
@@ -113,15 +121,25 @@ jobs:
             --exclude 'resmigazete\.gov\.tr'
             --exclude 'orca\.security/resources/blog/vector-database-security-risks'
             './**/*.md'
-          fail: true
+          fail: ${{ github.event_name == 'schedule' || github.event_name == 'workflow_dispatch' }}
           output: lychee.md
 
       - name: Rapor özeti
         if: always()
         run: cat lychee.md >> "$GITHUB_STEP_SUMMARY" || true
 
+      # push/PR'da bulunan sorunları uyarı olarak yüzeye çıkar — bloklamadan.
+      - name: Bulunan sorunları uyarı olarak bildir
+        if: success() && github.event_name != 'schedule' && github.event_name != 'workflow_dispatch'
+        run: |
+          if grep -qE '^\* \[(ERROR|[0-9]{3})\]|^\* \[TIMEOUT\]' lychee.md 2>/dev/null; then
+            echo "::warning::Ölü link taraması sorun buldu — ayrıntı için iş özetine bakın. Bu kontrol push/PR'da bloklamaz; haftalık zamanlanmış tarama yetkilidir."
+            grep -E '^\* \[' lychee.md | head -20
+          else
+            echo "Tüm linkler erişilebilir."
+          fi
+
       # Zamanlanmış taramada kırık link bulunursa issue aç.
-      # PR'da issue açma — orada fail yeterli sinyal.
       - name: Kırık link issue'su
         if: failure() && github.event_name == 'schedule'
         uses: peter-evans/create-issue-from-file@v5
