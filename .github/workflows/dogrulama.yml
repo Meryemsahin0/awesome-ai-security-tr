@@ -89,10 +89,16 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      # resmigazete.gov.tr taramadan çıkarıldı: link geçerli ve Türkiye'den
-      # anında açılıyor, ancak GitHub'ın ABD'deki runner'larından zaman aşımına
-      # uğruyor. Bu bir ölü link değil, coğrafi erişim farkı — taramayı kalıcı
-      # kırmızıya boyamaması için hariç tutuldu, listeden çıkarılmadı.
+      # Hariç tutulanlar. Kural: bir adres yalnızca ELLE doğrulanıp gerçekten
+      # canlı olduğu görüldüğünde ve hata bot korumasından/coğrafi farktan
+      # kaynaklandığında buraya eklenir. Gerçekten ölü linkler listeden
+      # çıkarılır, buraya gizlenmez.
+      #
+      # - resmigazete.gov.tr: Türkiye'den anında açılıyor, GitHub'ın ABD
+      #   runner'larından zaman aşımına uğruyor (coğrafi erişim farkı).
+      # - orca.security/.../vector-database-security-risks: çerez atmak için
+      #   bir kez 302 döndürüyor; çerez tutan istemcide 200. lychee çerez
+      #   tutmadığı için sonsuz yönlendirme görüyor (5 Ağu 2026'da elle teyit).
       - name: lychee
         id: lychee
         uses: lycheeverse/lychee-action@v2
@@ -105,6 +111,7 @@ jobs:
             --accept 200,206,403,429
             --exclude-path ./site
             --exclude 'resmigazete\.gov\.tr'
+            --exclude 'orca\.security/resources/blog/vector-database-security-risks'
             './**/*.md'
           fail: true
           output: lychee.md
